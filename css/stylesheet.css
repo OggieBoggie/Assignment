@@ -42,6 +42,11 @@ body {
 .placeholder {
     margin-top: 10px;
     margin-bottom: 10px;
+    padding: 0px 0px 80px 10px;
     border: 2px solid #77A7EB;
+    background-color: #F9F3EC;
+}
+
+.sidebar  {
     background-color: #F9F3EC;
 }
