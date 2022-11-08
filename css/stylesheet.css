@@ -1,0 +1,41 @@
+body {
+    background-color: #F2E9DD;
+    font-family: 'Montserrat', sans-serif;
+    color: #55869B;
+}
+
+.blocky {
+    list-style-type: square;
+}
+
+.none {
+    list-style-type: none
+}
+
+.darkbutton {
+    background-color: #5394A0;
+    border: 0px;
+    line-height: 2.5;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.purplebutton {
+    background-color: #6F6A87;
+    border: 0px;
+    line-height: 2.5;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.redbutton {
+    background-color: #D9827C;
+    border: 0px;
+    line-height: 2.5;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: white;
+    
+}
