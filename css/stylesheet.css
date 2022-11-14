@@ -47,6 +47,20 @@ body {
     background-color: #F9F3EC;
 }
 
-.sidebar  {
-    background-color: #F9F3EC;
+@media (min-width:600px) {
+    body {
+        display: grid;
+    }
+
+    #sidebar {
+        grid-column: 1/2;
+        grid-row: 1/5;
+        margin-right: 10px;
+        background-color: #F9F3EC;
+    }
+
+    header, footer, main {
+        grid-column: 2/5;
+    }
+    
 }
