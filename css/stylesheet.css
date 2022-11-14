@@ -47,6 +47,14 @@ body {
     background-color: #F9F3EC;
 }
 
+.bpadding {
+    padding-bottom: 10px;
+}
+
+.right {
+    text-align: right;
+}
+
 @media (min-width:600px) {
     body {
         display: grid;
@@ -61,6 +69,22 @@ body {
 
     header, footer, main {
         grid-column: 2/5;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 0px
+    }
+
+    .none {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        justify-content: right;
+    }
+
+    .padding {
+        padding: 5px;
     }
     
 }
