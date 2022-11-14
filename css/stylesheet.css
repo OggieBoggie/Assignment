@@ -12,6 +12,10 @@ body {
     list-style-type: none
 }
 
+.mid {
+    text-align: center;
+}
+
 .darkbutton {
     background-color: #5394A0;
     border: 0px;
@@ -90,6 +94,11 @@ body {
         padding-bottom: 10px;
         display: flex;
         justify-content: right;
+    }
+
+    .flexmid {
+        display: flex;
+        justify-content: center;
     }
     
 }
