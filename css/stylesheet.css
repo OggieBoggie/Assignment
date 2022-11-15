@@ -32,43 +32,54 @@ body {
     background-color: #F9F3EC;
 }
 
-@media only screen and (max-width:750px) { for dimension
-    h1 {
+.flexmid {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width:600px) {
+    .take {
         text-align: center;
         margin-top: 0px;
         font-size: 2.5vh;
     }
-    li {
-        font-size: 2vh;
+
+    .notes {
+        text-align: center;
+        font-size: 1.8vh;
+        margin-top: 0px;
     }
-    /* .darkbutton {
+    li {
+        font-size: 1.5vh;
+    }
+    .darkbutton {
         background-color: #5394A0;
         border: 0px;
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
+        line-height: 2vh;
+        padding: 1vh 1.5vh;
+        border-radius: 1vh;
         color: white;
     }
     .purplebutton {
         background-color: #6F6A87;
         border: 0px;
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
+        line-height: 2vh;
+        padding: 1vh 1.5vh;
+        border-radius: 1vh;
         color: white;
     }
     .redbutton {
         background-color: #D9827C;
         border: 0px;
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
+        line-height: 2vh;
+        padding: 1vh 1.5vh;
+        border-radius: 1vh;
         color: white;
-    } */
+    }
     
 }
 
-@media only screen and (min-width:750px) {
+@media only screen and (min-width:600px) {
 
     h1{
         text-align: center;
@@ -97,11 +108,6 @@ body {
         padding-bottom: 10px;
         display: flex;
         justify-content: right;
-    }
-
-    .flexmid {
-        display: flex;
-        justify-content: center;
     }
 
     .darkbutton {
