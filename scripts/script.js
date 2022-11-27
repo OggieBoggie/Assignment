@@ -34,6 +34,14 @@ cthemeButton.addEventListener("click", () => {
 
 })
 
+function toggleNotes () {
+        ccancelButton.classList.remove("hidden")
+        csaveButton.classList.remove("hidden")
+        textinput.classList.remove("hidden")
+}
+
+cnewnButton.addEventListener("click", toggleNotes)
+
 function toggleButton () {
         ccancelButton.classList.add("hidden")
         csaveButton.classList.add("hidden")
