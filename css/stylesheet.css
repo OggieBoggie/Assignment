@@ -1,5 +1,5 @@
 body {
-    background-color: var(--clr-light-background);
+    background-color: var(--clr-background);
     font-family: 'Montserrat', sans-serif;
     color: var(--clr-font);
     display: grid;
@@ -80,15 +80,27 @@ body {
 }
 
 :root {
-    --clr-light-background: #F2E9DD;
+    --clr-background: #F2E9DD;
+    --clr-sidecolor: #F9F3EC;
     --clr-font: #375353;
     --clr-newnbutton: #5394A0;
-    --clr-white: white; 
-    --clr-sidecolor: #F9F3EC;
+    --clr-white: white;
     --clr-border: #77A7EB;
     --clr-cancelbutton: #D9827C;
     --clr-themebutton: #6F6A87;
 
+}
+
+.darktheme {
+    --clr-background: #252526;
+    --clr-sidecolor: #3e3e42;
+    --clr-border: #77A7EB;
+    --clr-font: #007acc;
+    --clr-white: white;
+    --clr-border: #77A7EB;
+    --clr-newnbutton: #5394A0;
+    --clr-cancelbutton: #D9827C;
+    --clr-themebutton: #6F6A87;
 }
 
 @media only screen and (max-width:600px) {
@@ -103,19 +115,23 @@ body {
         font-size: 1.8vh;
         margin-top: 0px;
     }
+
     li {
         font-size: 1.5vh;
     }
+
     .newnbutton {
         line-height: 2vh;
         padding: 1vh 1.5vh;
         border-radius: 1vh;
     }
+
     .themebutton {
         line-height: 2vh;
         padding: 1vh 1.5vh;
         border-radius: 1vh;
     }
+
     .cancelbutton {
         line-height: 2vh;
         padding: 1vh 1.5vh;
@@ -129,7 +145,7 @@ body {
 
 @media only screen and (min-width:600px) {
 
-    h1{
+    h1 {
         text-align: center;
         margin-top: 0px
     }
@@ -145,10 +161,11 @@ body {
         padding: 5px 20px;
         border-radius: 10px;
     }
+
     .cancelbutton {
         line-height: 2.5;
         padding: 5px 20px;
         border-radius: 10px;
     }
-    
+
 }
