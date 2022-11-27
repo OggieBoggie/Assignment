@@ -1,4 +1,5 @@
 const cthemeButton = document.querySelector(".themebutton")
+const ccancelButton = document.querySelector(".cancelbutton")
 
 function changeTextLight () {
         cthemeButton.textContent = "Light Theme"

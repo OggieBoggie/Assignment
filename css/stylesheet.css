@@ -20,8 +20,7 @@ body {
 
 .placeholder {
     margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0px 0px 80px 10px;
+    padding: 0px 0px 10% 86%;
     border: 2px solid var(--clr-border);
     background-color: var(--clr-sidecolor);
 }
@@ -61,7 +60,7 @@ body {
     justify-content: right;
 }
 
-.newnbutton {
+.newnbutton, .savebutton {
     background-color: var(--clr-newnbutton);
     border: 0px;
     color: var(--clr-white);
@@ -119,7 +118,7 @@ body {
         font-size: 1.5vh;
     }
 
-    .newnbutton {
+    .newnbutton, .savebutton {
         line-height: 2vh;
         padding: 1vh 1.5vh;
         border-radius: 1vh;
@@ -149,7 +148,7 @@ body {
         margin-top: 0px
     }
 
-    .newnbutton {
+    .newnbutton, .savebutton {
         line-height: 2.5;
         padding: 5px 20px;
         border-radius: 10px;
