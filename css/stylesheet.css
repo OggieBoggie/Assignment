@@ -1,7 +1,7 @@
 body {
-    background-color: #F2E9DD;
+    background-color: var(--clr-light-background);
     font-family: 'Montserrat', sans-serif;
-    color: #375353;
+    color: var(--clr-font);
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -23,13 +23,13 @@ body {
     margin-bottom: 10px;
     padding: 0px 0px 80px 10px;
     border: 2px solid #77A7EB;
-    background-color: #F9F3EC;
+    background-color: var(--clr-sidecolor);
 }
 
 #sidebar {
     grid-row: 1/4;
     margin-right: 10px;
-    background-color: #F9F3EC;
+    background-color: var(--clr-sidecolor);
 }
 
 .flexmid {
@@ -62,21 +62,33 @@ body {
 }
 
 .newnbutton {
-    background-color: #5394A0;
+    background-color: var(--clr-newnbutton);
     border: 0px;
-    color: white;
+    color: var(--clr-white);
 }
 
 .themebutton {
-    background-color: #6F6A87;
+    background-color: var(--clr-themebutton);
     border: 0px;
-    color: white;
+    color: var(--clr-white);
 }
 
 .cancelbutton {
-    background-color: #D9827C;
+    background-color: var(--clr-cancelbutton);
     border: 0px;
-    color: white;
+    color: var(--clr-white);
+}
+
+:root {
+    --clr-light-background: #F2E9DD;
+    --clr-font: #375353;
+    --clr-newnbutton: #5394A0;
+    --clr-white: white; 
+    --clr-sidecolor: #F9F3EC;
+    --clr-border: #77A7EB;
+    --clr-cancelbutton: #D9827C;
+    --clr-themebutton: #6F6A87;
+
 }
 
 @media only screen and (max-width:600px) {
