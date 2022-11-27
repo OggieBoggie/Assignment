@@ -61,6 +61,23 @@ body {
     justify-content: right;
 }
 
+.newnbutton {
+    background-color: #5394A0;
+    border: 0px;
+    color: white;
+}
+
+.themebutton {
+    background-color: #6F6A87;
+    border: 0px;
+    color: white;
+}
+
+.cancelbutton {
+    background-color: #D9827C;
+    border: 0px;
+    color: white;
+}
 
 @media only screen and (max-width:600px) {
     .take {
@@ -77,29 +94,20 @@ body {
     li {
         font-size: 1.5vh;
     }
-    .darkbutton {
-        background-color: #5394A0;
-        border: 0px;
+    .newnbutton {
         line-height: 2vh;
         padding: 1vh 1.5vh;
         border-radius: 1vh;
-        color: white;
     }
-    .purplebutton {
-        background-color: #6F6A87;
-        border: 0px;
+    .themebutton {
         line-height: 2vh;
         padding: 1vh 1.5vh;
         border-radius: 1vh;
-        color: white;
     }
-    .redbutton {
-        background-color: #D9827C;
-        border: 0px;
+    .cancelbutton {
         line-height: 2vh;
         padding: 1vh 1.5vh;
         border-radius: 1vh;
-        color: white;
     }
 
     .place {
@@ -114,30 +122,21 @@ body {
         margin-top: 0px
     }
 
-    .darkbutton {
-        background-color: #5394A0;
-        border: 0px;
+    .newnbutton {
         line-height: 2.5;
         padding: 5px 20px;
         border-radius: 10px;
-        color: white;
     }
 
-    .purplebutton {
-        background-color: #6F6A87;
-        border: 0px;
+    .themebutton {
         line-height: 2.5;
         padding: 5px 20px;
         border-radius: 10px;
-        color: white;
     }
-    .redbutton {
-        background-color: #D9827C;
-        border: 0px;
+    .cancelbutton {
         line-height: 2.5;
         padding: 5px 20px;
         border-radius: 10px;
-        color: white;
     }
     
 }
