@@ -101,6 +101,10 @@ body {
     --clr-themebutton: #534C61;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 @media only screen and (max-width:600px) {
     .take {
         text-align: center;

@@ -1,5 +1,8 @@
 const cthemeButton = document.querySelector(".themebutton")
 const ccancelButton = document.querySelector(".cancelbutton")
+const csaveButton = document.querySelector(".savebutton")
+const cnewnButton = document.querySelector(".newnbutton")
+const textinput = document.querySelector(".placeholder")
 
 function changeTextLight () {
         cthemeButton.textContent = "Light Theme"
@@ -30,3 +33,11 @@ cthemeButton.addEventListener("click", () => {
     }
 
 })
+
+function toggleButton () {
+        ccancelButton.classList.add("hidden")
+        csaveButton.classList.add("hidden")
+        textinput.classList.add("hidden")
+}
+
+ccancelButton.addEventListener("click", toggleButton)
