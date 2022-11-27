@@ -22,7 +22,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 0px 0px 80px 10px;
-    border: 2px solid #77A7EB;
+    border: 2px solid var(--clr-border);
     background-color: var(--clr-sidecolor);
 }
 
@@ -94,13 +94,12 @@ body {
 .darktheme {
     --clr-background: #252526;
     --clr-sidecolor: #3e3e42;
-    --clr-border: #77A7EB;
-    --clr-font: #007acc;
+    --clr-border: #007acc;
+    --clr-font: #9ED8FF;
     --clr-white: white;
-    --clr-border: #77A7EB;
-    --clr-newnbutton: #5394A0;
-    --clr-cancelbutton: #D9827C;
-    --clr-themebutton: #6F6A87;
+    --clr-newnbutton: #263F45;
+    --clr-cancelbutton: #7B2924;
+    --clr-themebutton: #534C61;
 }
 
 @media only screen and (max-width:600px) {
