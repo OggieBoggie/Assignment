@@ -20,7 +20,7 @@ body {
 
 .placeholder {
     margin-top: 10px;
-    padding: 0px 0px 10% 86%;
+    padding: 0px 0px 35vh 68vw;
     border: 2px solid var(--clr-border);
     background-color: var(--clr-sidecolor);
 }
@@ -107,23 +107,20 @@ button {
     visibility: hidden;
 }
 
-@media only screen and (max-width:600px) {
-    .take {
-        text-align: center;
-        margin-top: 0px;
-        font-size: 2.5vh;
-    }
+.take {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2.5vh;
+}
 
-    .notes {
-        text-align: center;
-        font-size: 1.8vh;
-        margin-top: 0px;
-    }
+.notes {
+    text-align: center;
+    font-size: 1.8vh;
+    margin-top: 0px;
+}
 
-    li {
-        font-size: 1.5vh;
-    }
-
+li {
+    font-size: 1.5vh;
 }
 
 @media only screen and (min-width:600px) {
@@ -137,6 +134,18 @@ button {
         line-height: 2.5;
         padding: 5px 20px;
         border-radius: 10px;
+    }
+
+    .notes {
+        font-size: 3vh;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .take {
+        font-size: 4vh;
     }
 
 }
