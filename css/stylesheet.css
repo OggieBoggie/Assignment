@@ -131,21 +131,22 @@ li {
     }
 
     button {
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
-    }
-
-    .notes {
+        line-height: 3vh;
+        padding: 1.5vh 2.5vw 2.5vh 2.5vw ;
+        border-radius: 1.5vh;
         font-size: 3vh;
     }
 
+    .notes, .mid {
+        font-size: 4.2vh;
+    }
+
     li {
-        font-size: 20px;
+        font-size: 2.5vh;
     }
 
     .take {
-        font-size: 4vh;
+        font-size: 5.5vh;
     }
 
 }
