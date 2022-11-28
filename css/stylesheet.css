@@ -60,22 +60,24 @@ body {
     justify-content: right;
 }
 
+button {
+    line-height: 2vh;
+    padding: 1vh 1.5vh;
+    border-radius: 1vh;
+    border: 0px;
+    color: var(--clr-white)
+}
+
 .newnbutton, .savebutton {
     background-color: var(--clr-newnbutton);
-    border: 0px;
-    color: var(--clr-white);
 }
 
 .themebutton {
     background-color: var(--clr-themebutton);
-    border: 0px;
-    color: var(--clr-white);
 }
 
 .cancelbutton {
     background-color: var(--clr-cancelbutton);
-    border: 0px;
-    color: var(--clr-white);
 }
 
 :root {
@@ -122,27 +124,6 @@ body {
         font-size: 1.5vh;
     }
 
-    .newnbutton, .savebutton {
-        line-height: 2vh;
-        padding: 1vh 1.5vh;
-        border-radius: 1vh;
-    }
-
-    .themebutton {
-        line-height: 2vh;
-        padding: 1vh 1.5vh;
-        border-radius: 1vh;
-    }
-
-    .cancelbutton {
-        line-height: 2vh;
-        padding: 1vh 1.5vh;
-        border-radius: 1vh;
-    }
-
-    .place {
-        font-size: 2vh;
-    }
 }
 
 @media only screen and (min-width:600px) {
@@ -152,19 +133,7 @@ body {
         margin-top: 0px
     }
 
-    .newnbutton, .savebutton {
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
-    }
-
-    .themebutton {
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
-    }
-
-    .cancelbutton {
+    button {
         line-height: 2.5;
         padding: 5px 20px;
         border-radius: 10px;
