@@ -20,7 +20,7 @@ body {
 
 .placeholder {
     margin-top: 10px;
-    padding: 0px 0px 35vh 68vw;
+    padding: 0px 0px 20vh 30vw;
     border: 2px solid var(--clr-border);
     background-color: var(--clr-sidecolor);
 }
@@ -61,9 +61,10 @@ body {
 }
 
 button {
-    line-height: 2vh;
-    padding: 1vh 1.5vh;
-    border-radius: 1vh;
+    line-height: 1.5vh;
+    padding: 2vw 2vh;
+    border-radius: 0.5vh;
+    font-size: 1.5vh;
     border: 0px;
     color: var(--clr-white)
 }
@@ -120,7 +121,11 @@ button {
 }
 
 li {
-    font-size: 1.5vh;
+    font-size: 1.0vh;
+}
+.phonepadding {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 @media only screen and (min-width:600px) {
@@ -148,5 +153,16 @@ li {
     .take {
         font-size: 5.5vh;
     }
+
+    .phonepadding {
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+
+    .placeholder {
+        padding: 0px 0px 40vh 70vw;
+        margin-bottom: 10px;
+    }
+    
 
 }
