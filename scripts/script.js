@@ -49,3 +49,15 @@ function toggleNotes () {
 }
 
 cnewnButton.addEventListener("click", toggleNotes)
+
+let noteArray = [];
+function alertTitle() {
+        let savetitle = prompt("What title do you want for this note?");
+}
+
+
+function addNotes () {
+
+}
+
+csaveButton.addEventListener("click", alertTitle)
