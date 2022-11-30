@@ -1,40 +1,42 @@
+
 const cthemeButton = document.querySelector(".themebutton")
 const ccancelButton = document.querySelector(".cancelbutton")
 const csaveButton = document.querySelector(".savebutton")
 const cnewnButton = document.querySelector(".newnbutton")
 const textinput = document.querySelector(".placeholder")
+const myNotes = document.querySelector(".blocky")
 
-function changeTextLight () {
+function changeTextLight() {
         cthemeButton.textContent = "Light Theme"
 }
 
-function changeTextDark () {
+function changeTextDark() {
         cthemeButton.textContent = "Dark Theme"
 }
 
 // cthemeButton.addEventListener("click", changeText)
 
-function enableDarkTheme () {
+function enableDarkTheme() {
         document.body.classList.add("darktheme");
 }
 
-function disableDarkTheme () {
+function disableDarkTheme() {
         document.body.classList.remove("darktheme");
 }
 
 cthemeButton.addEventListener("click", () => {
-    if (cthemeButton.textContent != "Light Theme") {
-        changeTextLight()
-        enableDarkTheme()
-    }
-    else {
-        changeTextDark()
-        disableDarkTheme()
-    }
+        if (cthemeButton.textContent != "Light Theme") {
+                changeTextLight()
+                enableDarkTheme()
+        }
+        else {
+                changeTextDark()
+                disableDarkTheme()
+        }
 
 })
 
-function toggleButton () {
+function toggleButton() {
         ccancelButton.classList.add("hidden")
         csaveButton.classList.add("hidden")
         textinput.classList.add("hidden")
@@ -42,7 +44,7 @@ function toggleButton () {
 
 ccancelButton.addEventListener("click", toggleButton)
 
-function toggleNotes () {
+function toggleNotes() {
         ccancelButton.classList.remove("hidden")
         csaveButton.classList.remove("hidden")
         textinput.classList.remove("hidden")
@@ -51,13 +53,45 @@ function toggleNotes () {
 cnewnButton.addEventListener("click", toggleNotes)
 
 let noteArray = [];
-function alertTitle() {
-        let savetitle = prompt("What title do you want for this note?");
+
+noteArray[0] = {
+        title: "Test Title",
+        note: "This is a test note",
+};
+
+populateList(noteArray)
+
+function populateList(arr) {
+        for (let item of arr) {
+                let listItem = document.createElement("li");
+                listItem.textContent = item.title;
+                myNotes.appendChild(listItem);
+        }
 }
 
+function submitnoteArray () {
 
-function addNotes () {
+        let objArray = {
+                title: myNotes.value,
+                note: "Test note"
+        };
+        
+        updateLists(objArray);
 
-}
+        noteArray.push(objArray);
 
-csaveButton.addEventListener("click", alertTitle)
+        textinput.value = "";
+
+};
+
+function updateLists (notes) {
+
+        const listItem = document.createElement("li");
+        listItem.itemContext = notes.title;
+
+        myNotes.appendChild(listItem);
+};
+
+csaveButton.addEventListener("click", submitnoteArray)
+
+
