@@ -69,13 +69,19 @@ function populateList(arr) {
         }
 }
 
-function submitnoteArray () {
+function askTitle() {
+        let titles = prompt("Enter a title for your note")
+}
+
+function submitnoteArray(titles) {
+
+        askTitle(titles)
 
         let objArray = {
-                title: myNotes.value,
-                note: "Test note"
+                title: titles.value,
+                note: textinput.value,
         };
-        
+
         updateLists(objArray);
 
         noteArray.push(objArray);
@@ -84,14 +90,29 @@ function submitnoteArray () {
 
 };
 
-function updateLists (notes) {
+function updateLists(notes) {
 
         const listItem = document.createElement("li");
-        listItem.itemContext = notes.title;
+        listItem.textContext = `${notes.title}`;
 
         myNotes.appendChild(listItem);
 };
 
 csaveButton.addEventListener("click", submitnoteArray)
 
+function checkNotes(e) {
+
+        let input = e.target.textContent
+
+        for (let i=0; i < noteArray.length; i++) {
+                if (noteArray[i].title.includes(input)) {
+                        alert (`${noteArray[i].note}`)
+                }
+        }
+        // if (e.target.textContent === noteArray) {
+        //         alert(`${noteArray[i].note}.`)
+        // }
+}
+
+myNotes.addEventListener("click", checkNotes)
 
