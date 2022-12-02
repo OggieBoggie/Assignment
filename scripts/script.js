@@ -71,16 +71,18 @@ function populateList(arr) {
 
 function askTitle() {
         let titles = prompt("Enter a title for your note")
+        return titles
 }
 
-function submitnoteArray(titles) {
-
-        askTitle(titles)
-
-        let objArray = {
-                title: titles.value,
+function submitnoteArray(objArray) {
+        
+        objArray = {
+                title: null,
                 note: textinput.value,
         };
+
+        askTitle(objArray.title)
+
 
         updateLists(objArray);
 
