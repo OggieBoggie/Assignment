@@ -1,7 +1,7 @@
 body {
-    background-color: #F2E9DD;
+    background-color: var(--clr-background);
     font-family: 'Montserrat', sans-serif;
-    color: #375353;
+    color: var(--clr-font);
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -20,16 +20,15 @@ body {
 
 .placeholder {
     margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0px 0px 80px 10px;
-    border: 2px solid #77A7EB;
-    background-color: #F9F3EC;
+    padding: 0px 0px 20vh 30vw;
+    border: 2px solid var(--clr-border);
+    background-color: var(--clr-sidecolor);
 }
 
 #sidebar {
     grid-row: 1/4;
     margin-right: 10px;
-    background-color: #F9F3EC;
+    background-color: var(--clr-sidecolor);
 }
 
 .flexmid {
@@ -61,83 +60,109 @@ body {
     justify-content: right;
 }
 
+button {
+    line-height: 1.5vh;
+    padding: 2vw 2vh;
+    border-radius: 0.5vh;
+    font-size: 1.5vh;
+    border: 0px;
+    color: var(--clr-white)
+}
 
-@media only screen and (max-width:600px) {
-    .take {
-        text-align: center;
-        margin-top: 0px;
-        font-size: 2.5vh;
-    }
+.newnbutton, .savebutton {
+    background-color: var(--clr-newnbutton);
+}
 
-    .notes {
-        text-align: center;
-        font-size: 1.8vh;
-        margin-top: 0px;
-    }
-    li {
-        font-size: 1.5vh;
-    }
-    .darkbutton {
-        background-color: #5394A0;
-        border: 0px;
-        line-height: 2vh;
-        padding: 1vh 1.5vh;
-        border-radius: 1vh;
-        color: white;
-    }
-    .purplebutton {
-        background-color: #6F6A87;
-        border: 0px;
-        line-height: 2vh;
-        padding: 1vh 1.5vh;
-        border-radius: 1vh;
-        color: white;
-    }
-    .redbutton {
-        background-color: #D9827C;
-        border: 0px;
-        line-height: 2vh;
-        padding: 1vh 1.5vh;
-        border-radius: 1vh;
-        color: white;
-    }
+.themebutton {
+    background-color: var(--clr-themebutton);
+}
 
-    .place {
-        font-size: 2vh;
-    }
+.cancelbutton {
+    background-color: var(--clr-cancelbutton);
+}
+
+:root {
+    --clr-background: #F2E9DD;
+    --clr-sidecolor: #F9F3EC;
+    --clr-font: #375353;
+    --clr-newnbutton: #5394A0;
+    --clr-white: white;
+    --clr-border: #77A7EB;
+    --clr-cancelbutton: #D9827C;
+    --clr-themebutton: #6F6A87;
+
+}
+
+.darktheme {
+    --clr-background: #252526;
+    --clr-sidecolor: #3e3e42;
+    --clr-border: #007acc;
+    --clr-font: #9ED8FF;
+    --clr-white: white;
+    --clr-newnbutton: #263F45;
+    --clr-cancelbutton: #7B2924;
+    --clr-themebutton: #534C61;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.take {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2.5vh;
+}
+
+.notes {
+    text-align: center;
+    font-size: 1.8vh;
+    margin-top: 0px;
+}
+
+li {
+    font-size: 1.0vh;
+}
+.phonepadding {
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 @media only screen and (min-width:600px) {
 
-    h1{
+    h1 {
         text-align: center;
         margin-top: 0px
     }
 
-    .darkbutton {
-        background-color: #5394A0;
-        border: 0px;
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
-        color: white;
+    button {
+        line-height: 3vh;
+        padding: 1.5vh 2.5vw 2.5vh 2.5vw ;
+        border-radius: 1.5vh;
+        font-size: 3vh;
     }
 
-    .purplebutton {
-        background-color: #6F6A87;
-        border: 0px;
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
-        color: white;
+    .notes, .mid {
+        font-size: 4.2vh;
     }
-    .redbutton {
-        background-color: #D9827C;
-        border: 0px;
-        line-height: 2.5;
-        padding: 5px 20px;
-        border-radius: 10px;
-        color: white;
+
+    li {
+        font-size: 2.5vh;
+    }
+
+    .take {
+        font-size: 5.5vh;
+    }
+
+    .phonepadding {
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+
+    .placeholder {
+        padding: 0px 0px 40vh 70vw;
+        margin-bottom: 10px;
     }
     
+
 }

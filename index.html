@@ -8,58 +8,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
     <title>Take Better Notes</title>
+    <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
     <div id="sidebar">
         <h1 class="notes">My Notes</h1>
         <ul class="blocky">
-            <li class="notelist">note one</li>
-            <li class="notelist">note two</li>
         </ul>
     </div>
     <header>
         <h1 class="take">Take better Notes</h1>
+        <nav>
         <ul class="none">
             <li class="padding">About</li>
             <li class="padding">Docs</li>
         </ul>
+    </nav>
     </header>
     <main>
+        <div class="phonepadding"></div>
         <div class="btflex">
-            <button class="darkbutton" type="button">
+            <button class="newnbutton" type="button">
                 New Note
             </button>
-            <button class="purplebutton">
+            <button class="themebutton">
                 Dark Theme
             </button>
         </div>
 
-        <div class="placeholder">
-            <p class="place">This is a placeholder</p>
-        </div>
+        <input type="text" class="placeholder">
         <div class="bbflex">
             <div class="padding">
-                <button class="darkbutton" type="button">
+                <button class="savebutton" type="button">
                     Save
                 </button>
             </div>
             <div class="padding">
-                <button class="redbutton">
+                <button class="cancelbutton">
                     Cancel
                 </button>
             </div>
         </div>
+        <div class="phonepadding"></div>
     </main>
     <footer>
         <h2 class="mid">Keep in touch</h2>
         <div class="flexmid">
             <a href="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png"
                 target=" _blank " title="Image Logo1"><img src="./images/linkedin_circle_color-512.png"
-                    alt="linkedin logo" height="50px" width="50px"></a>
+                    alt="linkedin logo" height="75" width="75"></a>
             <a href="https://cdn0.iconfinder.com/data/icons/internet-line/512/Internet_Line-02-512.png"
                 target=" _blank " title="Image Logo2"><img src="./images/Internet_Line-02-512.png" alt="internet line"
-                    height="50px" width="50px"></a>
+                    height="75" width="75"></a>
         </div>
     </footer>
 </body>
